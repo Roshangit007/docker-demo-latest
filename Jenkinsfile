@@ -4,4 +4,4 @@ pipeline{   agent any   stages{
           sshagent(credentials:['Jenkins-server']){
           sh 'ssh  -o StrictHostKeyChecking=no  root@172.31.13.73 uptime "whoami"'    
       echo "success login"         }
-  }   }}
+    }   }}}
