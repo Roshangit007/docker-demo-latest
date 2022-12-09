@@ -10,6 +10,8 @@ pipeline{
 
                 sh 'ssh  -o StrictHostKeyChecking=no  root@172.31.13.73 uptime "whoami"'
 
+                rsync -avh /var/lib/jenkins/workspace/job-1/Dockerfile root@172.31.13.73/opt/
+
             }
 
                 echo "success lgoin"
